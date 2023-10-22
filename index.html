@@ -1,0 +1,67 @@
+<!--
+	Name : Riberiko Niyomwungere
+	Date : October 21, 2023
+
+	This is the main page for my time management app
+	It has a header and input section as well as 
+	a section for moving tasks back and forth the the completed
+	to still working on section
+  -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./index.js"> </script>
+    <title>Task Manager</title>
+</head>
+<body>
+	<header>
+		<h1>Task Manager</h1>
+		<ul>
+		  <li><a href="">About</a></li>
+		  <li><a href="./help.html">Help</a></li>
+		</ul>
+	</header>
+
+	<main>
+		<ol>
+			<li>
+
+				<h2>Add Tasks</h2>
+				<form>
+					<label for="title">Title: </label>
+					<input name="title" id="title" placeholder="ie.. Clean the house" />
+
+					<label for="startTime">Start Date: </label>
+					<input name="startTime" id="startTime" type="datetime-local" />
+
+					<label for="endTime">End Date: </label>
+					<input name="endTime" id="endTime" type="datetime-local" />
+
+					<textarea placeholder="Entry Description ..." name="entry"></textarea>
+
+					<input type="submit" value="Create Entry" />
+				</form>
+			</li>
+
+			<li id="todo">
+				<h2>Current Tasks</h2>
+				<article>
+					<h3>You have no tasks left to work on</h3>
+				</article>
+			</li>
+
+			<li id="done">
+				<h2>Completed Tasks</h2>
+				<article>
+					<h3>You have no completed tasks</h3>
+				</article>
+			</li>
+
+		</ol>
+	</main>
+</body>
+</html>

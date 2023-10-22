@@ -1,0 +1,209 @@
+/**
+ * Name : Riberiko Niyomwungere
+ * Date : October 21, 2023jj
+ *
+ * This is the stylesheet for my task management webapp
+ **/
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+header{
+  display: flex;
+  justify-content: space-between;
+  height: max-content;
+  justify-content: space-between;
+  align-items: center;
+  background-color: black;
+  color: white;
+  padding: 0.5rem;
+  border-bottom: 3px solid white;
+  position: sticky;
+  top: 0;
+  z-index: 2;
+}
+
+header ul{
+  display: flex;
+}
+
+header li{
+  list-style: none;
+}
+
+header a{
+  text-decoration: none;
+  margin: 5px;
+  font-size: 1.5rem;
+  background-color: purple;
+  color: white;
+  border-radius: 10px;
+  padding: 7px;
+  cursor: pointer;
+  
+  transition: background-color 150ms ease-in-out;
+}
+
+header a:hover{
+  background-color: lightpink;
+}
+
+main{
+  width: 100dvw;
+  height: 100dvh;
+}
+
+ol{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+ol li{
+  height: 300px;
+}
+
+ol li:first-of-type{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  min-height: 250px;
+  width: 100%;
+  height: auto;
+}
+
+ol li h2{
+  width: 100%;
+  height: min-content;
+}
+
+ol li:not(:first-of-type){
+  margin: 0.5rem;
+  border-radius: 10px;
+
+  width: calc( 50% - 1rem );
+  background-color: black;
+  
+  overflow-y: auto;
+
+  position: relative;
+  border: 2px solid black;
+  height: 650px;
+}
+
+ol li:not(:first-child) article h3{
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  height: min-content;
+  text-align: center;
+
+  transform: translateY(-50%);
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+ol li h2{
+
+  background-color: purple;
+  color: gold;
+  text-align: center;
+  
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  padding: 10px;
+  border-bottom: 2px solid gold;
+}
+
+ol li article{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  height: fit-content;
+  width: 100%;
+}
+
+#addTasks{
+  width: 100dvw;
+}
+
+.card{
+  border: 1.5px solid white;
+  background-color: pink;
+  border-radius: 5px;
+
+  display: flex;
+  flex-direction: column;
+
+  height: 300px;
+  margin: 5px;
+}
+
+form{
+  margin-top: 10px;
+  background-color: pink;
+  width: 50%;
+  min-width: 300px;
+
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 10px;
+  border-radius: 10px;
+  height: fit-content;
+
+}
+
+form label{
+  width: 15%;
+  font-size: larger;
+}
+
+form input{
+  min-width: 80%;
+  flex-grow: 1;
+}
+
+form *{
+  margin: 5px;
+}
+
+form textarea {
+  border: 2px solid blue;
+  width: 100%;
+  resize: none;
+  height: 200px;
+  font-size: 1.5rem;
+}
+
+form label, form input:not(:last-of-type) {
+  height: fit-content;
+}
+
+form input{
+  font-size: 1.5rem;
+}
+
+.hide{
+	display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
