@@ -8,7 +8,8 @@
  **/
 
 (function(){
-window.addEventListener("load", init)
+	"use strict"
+	window.addEventListener("load", init)
 
   	//CREATE GLOBAL VARABLES
   	let count = 0	
